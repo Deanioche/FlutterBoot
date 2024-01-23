@@ -27,11 +27,11 @@ Widget day01() {
                           child: Column(children: [
                         Column(
                           children: [
-                            showItem(Icons.bolt, 'Preminum features',
+                            _showItem(Icons.bolt, 'Preminum features',
                                 'Plus subscribers have access to FlutterBoot+ and out latest beta features'),
-                            showItem(Icons.whatshot, 'Priority access',
+                            _showItem(Icons.whatshot, 'Priority access',
                                 'You\'ll be able to use FlutterBoot+ even when demand is high'),
-                            showItem(Icons.speed, 'Ultra-fast',
+                            _showItem(Icons.speed, 'Ultra-fast',
                                 'Enjoy even faster response speeds when using FlutterBoot'),
                           ],
                         ),
@@ -84,7 +84,7 @@ Widget day01() {
                   )))));
 }
 
-Widget showItem(IconData icon, String title, String subtitle) {
+Widget _showItem(IconData icon, String title, String subtitle) {
   return Container(
       padding: const EdgeInsets.symmetric(vertical: 10),
       decoration: const BoxDecoration(
